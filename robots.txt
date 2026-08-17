@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://artyom129.github.io/sitemap.xml
