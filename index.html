@@ -80,13 +80,16 @@
           <h1 id="hero-title">Artyom<br><span>Koncha.</span></h1>
           <p class="hero-role">Python Backend &amp; Automation Developer</p>
           <p class="hero-lead">I build reliable backend systems, API integrations and workflow automation with Python and FastAPI.</p>
-          <p class="hero-support">APIs · Webhooks · Background Jobs · SaaS Backends · AI Integrations</p>
+          <p class="hero-support">Focused on APIs, webhooks, backend reliability, automation workflows and AI-assisted systems.</p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View Projects <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="#contact">Work With Me <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="https://github.com/artyom129" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/artyom-python-automation/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="hero-social"><a href="https://github.com/artyom129" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/artyom-python-automation/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+
+          <p class="hero-stack" aria-label="Primary technology stack">
+            <span>Python</span><span>FastAPI</span><span>APIs</span><span>Webhooks</span><span>PostgreSQL</span><span>Docker</span>
+          </p>
         </div>
 
         <figure class="system-map" aria-labelledby="system-map-caption">
@@ -111,6 +114,11 @@
         </figure>
       </div>
 
+      <div class="container principle-strip" aria-label="Engineering principles">
+        <div><span>01</span><strong>API-first</strong><small>Clear contracts and integrations</small></div>
+        <div><span>02</span><strong>Failure-aware</strong><small>Retries, validation and logs</small></div>
+        <div><span>03</span><strong>Maintainable</strong><small>Testable, explicit workflows</small></div>
+      </div>
     </section>
 
     <section class="section about" id="about" aria-labelledby="about-title">
@@ -119,7 +127,11 @@
           <p class="section-kicker"><span>01</span> About</p>
           <h2 id="about-title">Backend work that stays understandable.</h2>
         </div>
-        <div class="about-copy"><p>I turn manual processes and fragile integrations into backend systems that are clear to operate and maintain.</p><p class="about-emphasis">My work connects application logic, background processing and operational visibility—from API contracts to failure recovery.</p></div>
+        <div class="about-copy">
+          <p>Artyom Koncha is a Python Backend &amp; Automation Developer focused on building reliable API integrations, workflow automation and AI-assisted backend systems.</p>
+          <p>I primarily work with Python, FastAPI, REST APIs, webhooks, SQL and Docker.</p>
+          <p class="about-emphasis">I enjoy turning manual or unreliable processes into clear, testable and maintainable systems.</p>
+        </div>
       </div>
     </section>
 
@@ -130,25 +142,124 @@
           <p>Independent engineering projects exploring reliable automation, orchestration and integration patterns.</p>
         </div>
 
-<div class="project-list"><article class="project-card project-primary"><div class="project-content"><div class="project-meta"><span class="project-number">01</span><span class="project-type">Primary project</span></div><h3>Backplane</h3><p class="project-summary">Operations control plane for APIs, webhooks and background automation.</p><dl class="project-context"><dt>Problem</dt><dd>Integration failures are scattered across logs, queues and vendor tools.</dd><dt>What I built</dt><dd>A shared workspace to inspect delivery, operate jobs and resolve incidents.</dd></dl><h4 class="engineering-label">Engineering focus</h4><ul class="feature-list"><li>Multi-tenancy, RBAC, secret vault and scoped API keys</li><li>Webhook retries, replay and dead-letter handling</li><li>Background jobs and scheduling</li><li>Incidents, audit logs, Prometheus metrics and live activity</li></ul><div class="tag-list" aria-label="Backplane technology stack"><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span></div><a class="project-link" href="https://github.com/artyom129/backplane" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div><figure class="project-visual repository-visual"><a href="assets/backplane-overview.svg" target="_blank" rel="noopener" aria-label="Open Backplane repository overview illustration at full size"><img src="assets/backplane-overview.svg" width="1200" height="680" loading="lazy" alt="Backplane repository overview illustration with navigation for requests, webhooks, jobs and incidents"></a><figcaption>Repository overview illustration <span>Open full size ↗</span></figcaption><div class="visual-grid"><div><small>operate</small><strong>APIs &amp; jobs</strong></div><div><small>investigate</small><strong>Incidents &amp; audit</strong></div></div></figure></article><article class="project-card "><div class="project-content"><div class="project-meta"><span class="project-number">02</span><span class="project-type">Distributed background processing</span></div><h3>QueueForge</h3><p class="project-summary">Reliable distributed background job processing for Python applications.</p><dl class="project-context"><dt>Problem</dt><dd>Retries, duplicate submissions and worker crashes can lose or repeat work.</dd><dt>What I built</dt><dd>A durable job platform with explicit delivery and recovery semantics.</dd></dl><h4 class="engineering-label">Engineering focus</h4><ul class="feature-list"><li>Transactional outbox and at-least-once delivery</li><li>Race-safe idempotency and database-backed worker claims</li><li>Exponential backoff, scheduling and dead-letter queue</li><li>Heartbeats, stale-worker recovery, cancellation and timeouts</li></ul><div class="tag-list" aria-label="QueueForge technology stack"><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Workers</span><span>Docker</span></div><a class="project-link" href="https://github.com/artyom129/queueforge" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div><figure class="project-visual architecture"><figcaption class="visual-header">queueforge / simplified architecture</figcaption><div class="architecture-flow"><div class="architecture-node"><strong>FastAPI</strong><small>Validate submission</small></div><span class="architecture-arrow" aria-hidden="true">↓</span><div class="architecture-node"><strong>PostgreSQL</strong><small>Job + outbox transaction</small></div><span class="architecture-arrow" aria-hidden="true">↓</span><div class="architecture-node"><strong>Redis → Workers</strong><small>Publish, claim and execute</small></div><span class="architecture-arrow" aria-hidden="true">↓</span><div class="architecture-node"><strong>Retry / DLQ</strong><small>Backoff and recovery</small></div></div></figure></article><article class="project-card "><div class="project-content"><div class="project-meta"><span class="project-number">03</span><span class="project-type">Multi-tenant SaaS foundation</span></div><h3>TenantForge</h3><p class="project-summary">Production-style SaaS backend with explicit tenant and permission boundaries.</p><dl class="project-context"><dt>Problem</dt><dd>Shared infrastructure needs to keep customer data and permissions separate.</dd><dt>What I built</dt><dd>A tenant-scoped foundation for identity, access, usage and billing events.</dd></dl><h4 class="engineering-label">Engineering focus</h4><ul class="feature-list"><li>Tenant isolation and OWNER / ADMIN / MEMBER RBAC</li><li>JWT authentication and hashed API keys</li><li>Quotas and idempotent billing webhook handling</li><li>Audit logs, background jobs and observability</li></ul><div class="tag-list" aria-label="TenantForge technology stack"><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>JWT</span><span>RBAC</span><span>API Keys</span><span>Docker</span></div><a class="project-link" href="https://github.com/artyom129/tenantforge" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div><figure class="project-visual architecture"><figcaption class="visual-header">tenantforge / simplified architecture</figcaption><div class="architecture-flow"><div class="architecture-node"><strong>JWT / API key</strong><small>Authenticate principal</small></div><span class="architecture-arrow" aria-hidden="true">↓</span><div class="architecture-node"><strong>Tenant + RBAC</strong><small>Authorize every operation</small></div><span class="architecture-arrow" aria-hidden="true">↓</span><div class="architecture-node"><strong>PostgreSQL</strong><small>Tenant-scoped reads and writes</small></div><span class="architecture-arrow" aria-hidden="true">↓</span><div class="architecture-node"><strong>Redis workers</strong><small>Billing events and background jobs</small></div></div></figure></article></div><div class="more-projects"><h3>More Projects</h3><div class="more-grid"><a class="more-card" href="https://github.com/artyom129/RelayDesk-AI-Business-Automation-AI-Integration-Platform" target="_blank" rel="noopener noreferrer"><h4>RelayDesk AI <span aria-hidden="true">↗</span></h4><p>AI-assisted lead workflows and business integrations.</p></a><a class="more-card" href="https://github.com/artyom129/opsweave" target="_blank" rel="noopener noreferrer"><h4>OpsWeave <span aria-hidden="true">↗</span></h4><p>Observable workflow orchestration with retries and replay.</p></a><a class="more-card" href="https://github.com/artyom129/api-webhook-reliability-monitor" target="_blank" rel="noopener noreferrer"><h4>API &amp; Webhook Reliability Monitor <span aria-hidden="true">↗</span></h4><p>Capture, inspect, forward and replay webhook events.</p></a><a class="more-card" href="https://github.com/artyom129/syncproof" target="_blank" rel="noopener noreferrer"><h4>SyncProof <span aria-hidden="true">↗</span></h4><p>Data reconciliation, explainable diffs and migration patch plans.</p></a><a class="more-card" href="https://github.com/artyom129/cohortswitch" target="_blank" rel="noopener noreferrer"><h4>CohortSwitch <span aria-hidden="true">↗</span></h4><p>Feature flags and deterministic progressive rollouts.</p></a></div></div></div></section>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-meta"><span class="project-number">01</span><span class="project-type">Independent portfolio project</span></div>
+              <h3>RelayDesk AI</h3>
+              <p class="project-summary">AI-assisted business automation platform built around Python and FastAPI.</p>
+              <ul class="feature-list">
+                <li>CRM, Google Sheets and email integrations</li>
+                <li>AI-assisted lead qualification workflows</li>
+                <li>Retries, audit logging and dead-letter queue</li>
+                <li>OpenAPI, Docker and automated tests</li>
+              </ul>
+              <div class="tag-list" aria-label="RelayDesk AI technology stack"><span>Python</span><span>FastAPI</span><span>Webhooks</span><span>OpenAI API</span><span>Docker</span></div>
+              <a class="project-link" href="https://github.com/artyom129/RelayDesk-AI-Business-Automation-AI-Integration-Platform" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <div class="visual-header"><span>relaydesk.pipeline</span><i></i></div>
+              <div class="visual-flow"><span>Lead source</span><b>→</b><span>FastAPI</span><b>→</b><span>Workflow</span></div>
+              <div class="visual-grid">
+                <div><small>integrate</small><strong>CRM</strong></div><div><small>qualify</small><strong>AI</strong></div>
+                <div><small>notify</small><strong>Email</strong></div><div><small>record</small><strong>Sheets</strong></div>
+              </div>
+              <div class="visual-log"><span><i></i> request.accepted</span><span><i></i> workflow.dispatched</span><span><i></i> audit.recorded</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-meta"><span class="project-number">02</span><span class="project-type">Workflow orchestration</span></div>
+              <h3>OpsWeave</h3>
+              <p class="project-summary">Workflow orchestration and reliability platform for explicit, observable backend processes.</p>
+              <ul class="feature-list">
+                <li>DAG workflows with manual, webhook and scheduled triggers</li>
+                <li>Retries, replay, branches and dead-letter queue</li>
+                <li>WebSocket updates, telemetry and audit logs</li>
+                <li>Secret vault, Docker, tests and GitHub Actions</li>
+              </ul>
+              <div class="tag-list" aria-label="OpsWeave technology stack"><span>Python</span><span>FastAPI</span><span>SQLite WAL</span><span>WebSockets</span><span>CI/CD</span></div>
+              <a class="project-link" href="https://github.com/artyom129/opsweave" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <div class="visual-header"><span>opsweave.run</span><i></i></div>
+              <div class="dag">
+                <div class="dag-node dag-start"><small>trigger</small><strong>Webhook</strong></div><span class="dag-line dag-line-a"></span>
+                <div class="dag-node dag-main"><small>node 01</small><strong>Validate</strong></div><span class="dag-line dag-line-b"></span><span class="dag-line dag-line-c"></span>
+                <div class="dag-node dag-left"><small>branch a</small><strong>Process</strong></div><div class="dag-node dag-right"><small>branch b</small><strong>Notify</strong></div>
+              </div>
+              <div class="visual-log"><span><i></i> run.started</span><span><i></i> node.completed</span><span><i></i> telemetry.published</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-meta"><span class="project-number">03</span><span class="project-type">Webhook reliability tooling</span></div>
+              <h3>API &amp; Webhook Reliability Monitor</h3>
+              <p class="project-summary">FastAPI-based tool for receiving, validating, forwarding, inspecting and replaying webhooks.</p>
+              <ul class="feature-list">
+                <li>Webhook capture, payload inspection and validation</li>
+                <li>Forwarding, retries and controlled replay</li>
+                <li>Secret rotation and API testing workflows</li>
+                <li>CSV/Excel export, Docker and automated tests</li>
+              </ul>
+              <div class="tag-list" aria-label="API and Webhook Reliability Monitor technology stack"><span>Python</span><span>FastAPI</span><span>Webhooks</span><span>pytest</span><span>Docker</span></div>
+              <a class="project-link" href="https://github.com/artyom129/api-webhook-reliability-monitor" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <div class="visual-header"><span>webhook.event</span><i></i></div>
+              <div class="request-card">
+                <div><span class="method">POST</span><code>/hooks/inbound</code><span class="response">202</span></div>
+                <pre>{
+  "event": "workflow.updated",
+  "valid": true,
+  "attempt": 1
+}</pre>
+              </div>
+              <div class="visual-flow visual-flow-compact"><span>Capture</span><b>→</b><span>Inspect</span><b>→</b><span>Replay</span></div>
+              <div class="visual-log"><span><i></i> signature.valid</span><span><i></i> payload.stored</span><span><i></i> delivery.forwarded</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section stack" id="stack" aria-labelledby="stack-title">
       <div class="container">
         <div class="section-heading section-heading-row">
           <div><p class="section-kicker"><span>03</span> Technical stack</p><h2 id="stack-title">Tools chosen for the system.</h2></div>
           <p>A practical backend toolkit for APIs, data, automation, testing and deployment.</p>
         </div>
-<div class="stack-grid"><article class="stack-group"><span class="stack-index">01</span><h3>Backend</h3><div class="stack-items"><span>Python</span><span>FastAPI</span><span>REST APIs</span><span>Webhooks</span></div></article><article class="stack-group"><span class="stack-index">02</span><h3>Data</h3><div class="stack-items"><span>PostgreSQL</span><span>Redis</span><span>SQLite</span><span>SQL</span></div></article><article class="stack-group"><span class="stack-index">03</span><h3>Infrastructure</h3><div class="stack-items"><span>Docker</span><span>GitHub Actions</span><span>Linux</span><span>Prometheus</span></div></article><article class="stack-group"><span class="stack-index">04</span><h3>Automation</h3><div class="stack-items"><span>API integrations</span><span>Background jobs</span><span>Workflow automation</span><span>Data synchronization</span></div></article><article class="stack-group"><span class="stack-index">05</span><h3>AI</h3><div class="stack-items"><span>LLM integrations</span><span>AI-assisted workflows</span></div></article></div></div></section>
+        <div class="stack-grid">
+          <article class="stack-group"><span class="stack-index">01</span><h3>Backend</h3><div class="stack-items"><span>Python</span><span>FastAPI</span><span>REST APIs</span><span>Async workflows</span></div></article>
+          <article class="stack-group"><span class="stack-index">02</span><h3>Data</h3><div class="stack-items"><span>PostgreSQL</span><span>SQLite</span><span>SQL</span><span>Pandas</span></div></article>
+          <article class="stack-group"><span class="stack-index">03</span><h3>Automation</h3><div class="stack-items"><span>Webhooks</span><span>API integrations</span><span>Workflow automation</span><span>Data synchronization</span></div></article>
+          <article class="stack-group"><span class="stack-index">04</span><h3>Engineering</h3><div class="stack-items"><span>Docker</span><span>Git &amp; GitHub</span><span>pytest</span><span>OpenAPI</span><span>CI/CD</span></div></article>
+          <article class="stack-group"><span class="stack-index">05</span><h3>AI</h3><div class="stack-items"><span>OpenAI API</span><span>AI integrations</span></div></article>
+        </div>
+      </div>
+    </section>
+
     <section class="section focus" aria-labelledby="focus-title">
       <div class="container">
-        <div class="section-heading"><p class="section-kicker"><span>04</span> Engineering focus</p><h2 id="focus-title">How I build reliable systems.</h2></div>
-<div class="focus-grid"><article><span>01</span><h3>Idempotency</h3><p>Use database constraints and atomic writes so repeated requests do not repeat side effects.</p></article><article><span>02</span><h3>Retry &amp; failure recovery</h3><p>Bound retries, preserve failed work and make recovery an explicit operation.</p></article><article><span>03</span><h3>Tenant isolation</h3><p>Scope reads and writes to the authenticated tenant and test cross-tenant access.</p></article><article><span>04</span><h3>Observability</h3><p>Expose request IDs, structured logs and metrics that explain what failed.</p></article><article><span>05</span><h3>Testing &amp; CI</h3><p>Exercise permissions, concurrency and failure paths in automated checks.</p></article></div><div class="engineering-proof"><h3>Proof of engineering</h3><p>Explore the implementation, configuration and tests behind the projects.</p><div class="proof-links"><a href="https://github.com/artyom129/backplane/blob/main/docker-compose.yml" target="_blank" rel="noopener noreferrer">Dockerized environments <span aria-hidden="true">↗</span></a><a href="https://github.com/artyom129/backplane/blob/main/.github/workflows/ci.yml" target="_blank" rel="noopener noreferrer">CI and automated tests <span aria-hidden="true">↗</span></a><a href="https://github.com/artyom129/tenantforge/blob/main/README.md#api-examples" target="_blank" rel="noopener noreferrer">OpenAPI documentation <span aria-hidden="true">↗</span></a><a href="https://github.com/artyom129/queueforge/blob/main/docs/RELIABILITY.md" target="_blank" rel="noopener noreferrer">Retry and failure recovery <span aria-hidden="true">↗</span></a><a href="https://github.com/artyom129/tenantforge/blob/main/README.md#observability" target="_blank" rel="noopener noreferrer">Structured logging & health checks <span aria-hidden="true">↗</span></a><a href="https://github.com/artyom129/tenantforge/tree/main/alembic" target="_blank" rel="noopener noreferrer">Database migrations <span aria-hidden="true">↗</span></a></div></div></div></section>
+        <div class="section-heading"><p class="section-kicker"><span>04</span> Engineering focus</p><h2 id="focus-title">What I design for.</h2></div>
+        <div class="focus-grid">
+          <article><span>01</span><h3>API Integrations</h3><p>Designing reliable REST API and webhook integrations with clear contracts.</p></article>
+          <article><span>02</span><h3>Workflow Reliability</h3><p>Retries, validation, logging, monitoring and deliberate failure handling.</p></article>
+          <article><span>03</span><h3>Automation</h3><p>Replacing repetitive manual workflows with maintainable backend systems.</p></article>
+          <article><span>04</span><h3>AI Integration</h3><p>Connecting AI models to real application workflows, data and APIs.</p></article>
+        </div>
+      </div>
+    </section>
+
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="container contact-card">
         <div>
           <p class="section-kicker"><span>05</span> Contact</p>
-          <h2 id="contact-title">Need an API, integration or automation system?</h2>
-          <p>I take scoped backend and automation projects from architecture to delivery.</p>
-
+          <h2 id="contact-title">Let’s build a backend that holds up.</h2>
+          <p>Interested in Python backend, automation or API integration work?</p>
+          <p class="availability"><span aria-hidden="true"></span> Open to remote backend, Python automation and API integration opportunities.</p>
         </div>
         <div class="contact-links">
           <a href="https://github.com/artyom129" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span aria-hidden="true">↗</span></a>

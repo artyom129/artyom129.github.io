@@ -17,7 +17,7 @@ navMenu.addEventListener("click", (event) => {
 });
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && navToggle.getAttribute("aria-expanded") === "true") {
+  if (event.key === "Escape") {
     setMenuState(false);
     navToggle.focus();
   }
