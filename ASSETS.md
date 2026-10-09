@@ -1,7 +1,5 @@
 # Asset provenance
 
-- `assets/backplane-overview.svg`: unchanged repository overview illustration from https://github.com/artyom129/backplane/blob/main/docs/hero.svg (MIT). This is a repository illustration, not a captured product screenshot. The card labels it accordingly and provides a full-size view.
-- QueueForge and TenantForge diagrams: semantic HTML/CSS summaries based on their repository README architecture and reliability documentation. No screenshots were fabricated.
-- Existing favicon, metadata, verification file, robots.txt, sitemap.xml and .nojekyll retained.
+The current portfolio does not display project images, mockups or placeholder screenshots. Its project descriptions are based on the linked repositories and their README files.
 
-Repository trees and documentation were inspected on 2026-09-06. No raster screenshots were found in the three flagship repositories.
+The existing `assets/backplane-overview.svg` remains in the repository but is not referenced by the site. It is an architecture illustration from the BACKPLANE repository, not a captured product screenshot. The existing favicon remains in use.
