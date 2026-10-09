@@ -1,5 +1,6 @@
 # Asset provenance
 
-The current portfolio does not display project images, mockups or placeholder screenshots. Its project descriptions are based on the linked repositories and their README files.
-
-The existing `assets/backplane-overview.svg` remains in the repository but is not referenced by the site. It is an architecture illustration from the BACKPLANE repository, not a captured product screenshot. The existing favicon remains in use.
+- `assets/ink-mascot.svg`: original monochrome vector illustration created for this portfolio. It depicts a small animated computer character and draws on the general visual language of early black-and-white rubber-hose animation. It does not reproduce the characters in the reference images.
+- `favicon.svg`: original matching monochrome icon.
+- No project cards display placeholder images or fabricated screenshots.
+- `assets/backplane-overview.svg`: older repository architecture illustration, retained in the repository but not used on the site. Its source and license are documented in `assets/BACKPLANE-LICENSE.txt`.
