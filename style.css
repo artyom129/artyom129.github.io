@@ -103,32 +103,34 @@ body::after{position:fixed;inset:0;z-index:100;pointer-events:none;content:"";ba
 @media(max-width:700px){.hero{min-height:0;padding-top:55px}.hero h1{font-size:clamp(3.2rem,10vw,5.2rem)}.hero-footer{margin-top:85px}.about-portrait{width:min(62%,240px);margin-top:24px}}
 @media(max-width:420px){.hero h1{font-size:clamp(2.9rem,10.5vw,4.1rem)}.about-portrait{width:min(70%,220px)}}
 
-/* Quiet black-and-white motion based on old film reels. */
-.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,420px);column-gap:3.5vw;align-items:center;min-height:630px;padding-top:70px}
-.hero-main{flex:none;animation:ink-appear .7s both}
+
+/* A small request flow, drawn like three frames of an ink cartoon. */
+html{scroll-behavior:auto}
+body{background:#e7e5df;background-image:none}
+body::after{display:none}
+.about-portrait img{filter:none;mix-blend-mode:normal;mask-image:none}
+.hero{grid-template-columns:minmax(0,1fr) minmax(290px,370px);column-gap:clamp(30px,4vw,65px);align-items:center;min-height:600px;padding-top:70px}
+.hero-main{min-width:0}
 .hero h1{max-width:830px;font-size:clamp(3.6rem,5.4vw,7rem)}
 .hero-lead{max-width:650px}
-.hero-motion{width:min(100%,440px);justify-self:end;align-self:center;transform:rotate(-4deg);animation:reel-appear .9s .15s both}
-.hero-motion svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(6px 7px 0 rgba(23,23,23,.2))}
-.reel-rotor{transform-box:view-box;transform-origin:230px 160px;animation:reel-turn 16s steps(32,end) infinite}
-.film-strip-motion{animation:film-shift 2.8s steps(4,end) infinite alternate}
-.motion-trail{animation:trail-draw 1.2s linear infinite}
-.motion-spark{transform-box:fill-box;transform-origin:center;animation:spark-bob 2.4s steps(3,end) infinite}
-.pulse{animation:ink-blink 2.5s steps(2,end) infinite}
 .hero-footer{grid-column:1/-1;align-self:end;margin-top:20px}
-.project-card:hover .project-open span{display:inline-block;animation:arrow-hop .45s ease both}
-.project-dialog[open]{animation:dialog-enter .25s ease-out both}
-@keyframes reel-turn{to{transform:rotate(360deg)}}
-@keyframes film-shift{to{transform:translateX(-8px)}}
-@keyframes trail-draw{to{stroke-dashoffset:-25}}
-@keyframes spark-bob{50%{transform:scale(1.12) rotate(7deg)}}
-@keyframes ink-blink{50%{opacity:.4}}
-@keyframes ink-appear{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@keyframes reel-appear{from{opacity:0;transform:translateY(14px) rotate(-4deg)}to{opacity:1;transform:rotate(-4deg)}}
-@keyframes arrow-hop{50%{transform:translate(3px,-3px)}}
-@keyframes dialog-enter{from{opacity:.7;transform:translateX(15px)}to{opacity:1;transform:translateX(0)}}
-@media(max-width:1050px){.hero{grid-template-columns:minmax(0,1fr) minmax(270px,350px)}.hero h1{font-size:clamp(3.5rem,5.4vw,6rem)}}
-@media(max-width:950px){.hero{display:flex;flex-direction:column;align-items:stretch;min-height:0;padding-top:68px}.hero h1{max-width:900px;font-size:clamp(3.6rem,7vw,6rem)}.hero-motion{align-self:center;justify-self:auto;width:min(62%,330px);margin:30px auto 0}.hero-footer{margin-top:15px}}
-@media(max-width:700px){.hero{padding-top:50px}.hero h1{font-size:clamp(3.1rem,10vw,5.2rem)}.hero-motion{width:min(75%,300px);margin-top:20px}.hero-footer{margin-top:10px}}
-@media(max-width:420px){.hero h1{font-size:clamp(2.85rem,10.2vw,4rem)}.hero-motion{width:min(80%,280px)}}
-@media(prefers-reduced-motion:reduce){.hero-main,.hero-motion,.reel-rotor,.film-strip-motion,.motion-trail,.motion-spark,.pulse,.project-card:hover .project-open span,.project-dialog[open]{animation:none!important}}
+.hero-process{width:min(100%,350px);justify-self:center;display:grid;grid-template-columns:1fr;align-items:center;margin:0 auto;transform:rotate(-3deg)}
+.process-step{position:relative;display:flex;align-items:center;gap:14px;width:84%;min-height:82px;padding:13px 18px;background:#f5f3ee;border:3px solid #171717;border-radius:18px 15px 19px 14px;box-shadow:5px 5px 0 #171717}
+.process-step-one{justify-self:start}
+.process-step-two{justify-self:end;background:#d7d5cf;transform:rotate(4deg)}
+.process-step-three{justify-self:start;background:#e9e7e1;transform:rotate(-2deg)}
+.process-index{align-self:flex-start;font-size:10px;font-weight:900;line-height:1.1}
+.process-icon{min-width:44px;text-align:center;font-size:32px;font-weight:900;line-height:1}
+.process-lines{display:grid;gap:7px;flex:1}
+.process-lines i{display:block;height:5px;background:#171717;border-radius:99px}
+.process-lines i:last-child{width:63%}
+.process-wire{position:relative;width:3px;height:49px;background:repeating-linear-gradient(to bottom,#171717 0 8px,transparent 8px 14px);justify-self:center}
+.process-wire-one{transform:rotate(-21deg)}
+.process-wire-two{transform:rotate(21deg)}
+.process-signal{position:absolute;left:-5px;top:0;width:13px;height:13px;background:#171717;border:2px solid #e7e5df;border-radius:50%;animation:signal-travel 2.4s steps(10,end) infinite}
+.process-wire-two .process-signal{animation-delay:1.2s}
+@keyframes signal-travel{from{transform:translateY(0)}to{transform:translateY(42px)}}
+@media(max-width:950px){.hero{grid-template-columns:minmax(0,1fr) 300px;column-gap:25px}.hero h1{font-size:clamp(3.2rem,5.4vw,5.2rem)}}
+@media(max-width:700px){.hero{grid-template-columns:1fr;min-height:0;padding-top:55px}.hero h1{font-size:clamp(3.2rem,10vw,5.2rem)}.hero-process{width:min(75%,320px);margin:62px auto 5px}.hero-footer{margin-top:42px}}
+@media(max-width:420px){.hero-process{width:min(90%,300px)}.process-step{min-height:70px;padding:9px 14px}.process-icon{font-size:27px}}
+@media(prefers-reduced-motion:reduce){.process-signal{animation:none}}
