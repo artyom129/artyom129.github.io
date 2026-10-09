@@ -89,3 +89,16 @@ body::after{position:fixed;inset:0;z-index:100;pointer-events:none;content:"";ba
 /* Portrait crop for the header mark; the same owner-provided image is used in the hero. */
 .wordmark-icon.portrait-mark{width:58px;height:58px;flex:0 0 58px;border:3px solid #171717;border-radius:50%;background-color:#d9d7d1;background-image:url("assets/artyom-portrait.png?v=portrait-logo-20261009");background-repeat:no-repeat;background-size:185px auto;background-position:-29px -43px;box-shadow:4px 4px 0 #777;transform:rotate(-3deg)}
 @media(max-width:700px){.wordmark-icon.portrait-mark{width:44px;height:44px;flex-basis:44px;background-size:140px auto;background-position:-22px -33px}}
+
+/* Keep the opening statement clear; place the owner's portrait beside the biography. */
+.hero{display:flex;flex-direction:column;min-height:610px;padding-top:95px}
+.hero-main{flex:1}
+.hero h1{max-width:1120px;font-size:clamp(4rem,7vw,8.1rem)}
+.hero-lead{max-width:720px}
+.hero-footer{margin-top:70px}
+.about-kicker{display:flex;flex-direction:column;align-items:flex-start}
+.about-portrait{width:min(100%,345px);margin:72px 0 0}
+.about-portrait img{display:block;width:100%;height:auto;filter:grayscale(1) contrast(1.05);mix-blend-mode:multiply;mask-image:radial-gradient(ellipse 75% 78% at 50% 50%,#000 58%,transparent 100%)}
+@media(max-width:800px){.hero{min-height:560px;padding-top:75px}.hero h1{font-size:clamp(3.7rem,8vw,6rem)}.about-portrait{width:min(55%,260px);margin:30px 0 10px}}
+@media(max-width:700px){.hero{min-height:0;padding-top:55px}.hero h1{font-size:clamp(3.2rem,10vw,5.2rem)}.hero-footer{margin-top:85px}.about-portrait{width:min(62%,240px);margin-top:24px}}
+@media(max-width:420px){.hero h1{font-size:clamp(2.9rem,10.5vw,4.1rem)}.about-portrait{width:min(70%,220px)}}
