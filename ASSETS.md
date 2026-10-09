@@ -1,6 +1,6 @@
 # Asset provenance
 
-- `assets/ink-mascot.svg`: original monochrome vector illustration created for this portfolio. It depicts a small animated computer character and draws on the general visual language of early black-and-white rubber-hose animation. It does not reproduce the characters in the reference images.
-- `favicon.svg`: original matching monochrome icon.
-- No project cards display placeholder images or fabricated screenshots.
-- `assets/backplane-overview.svg`: older repository architecture illustration, retained in the repository but not used on the site. Its source and license are documented in `assets/BACKPLANE-LICENSE.txt`.
+- `assets/artyom-portrait.png`: monochrome AI-generated portrait supplied by the site owner for use as the hero illustration.
+- `favicon.svg`: original monochrome icon created for this portfolio.
+- Project cards contain no placeholder images or fabricated screenshots.
+- `assets/backplane-overview.svg`: older repository architecture illustration, retained but not displayed. Its source and license are documented in `assets/BACKPLANE-LICENSE.txt`.
