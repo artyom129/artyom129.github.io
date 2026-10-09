@@ -102,3 +102,33 @@ body::after{position:fixed;inset:0;z-index:100;pointer-events:none;content:"";ba
 @media(max-width:800px){.hero{min-height:560px;padding-top:75px}.hero h1{font-size:clamp(3.7rem,8vw,6rem)}.about-portrait{width:min(55%,260px);margin:30px 0 10px}}
 @media(max-width:700px){.hero{min-height:0;padding-top:55px}.hero h1{font-size:clamp(3.2rem,10vw,5.2rem)}.hero-footer{margin-top:85px}.about-portrait{width:min(62%,240px);margin-top:24px}}
 @media(max-width:420px){.hero h1{font-size:clamp(2.9rem,10.5vw,4.1rem)}.about-portrait{width:min(70%,220px)}}
+
+/* Quiet black-and-white motion based on old film reels. */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,420px);column-gap:3.5vw;align-items:center;min-height:630px;padding-top:70px}
+.hero-main{flex:none;animation:ink-appear .7s both}
+.hero h1{max-width:830px;font-size:clamp(3.6rem,5.4vw,7rem)}
+.hero-lead{max-width:650px}
+.hero-motion{width:min(100%,440px);justify-self:end;align-self:center;transform:rotate(-4deg);animation:reel-appear .9s .15s both}
+.hero-motion svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(6px 7px 0 rgba(23,23,23,.2))}
+.reel-rotor{transform-box:view-box;transform-origin:230px 160px;animation:reel-turn 16s steps(32,end) infinite}
+.film-strip-motion{animation:film-shift 2.8s steps(4,end) infinite alternate}
+.motion-trail{animation:trail-draw 1.2s linear infinite}
+.motion-spark{transform-box:fill-box;transform-origin:center;animation:spark-bob 2.4s steps(3,end) infinite}
+.pulse{animation:ink-blink 2.5s steps(2,end) infinite}
+.hero-footer{grid-column:1/-1;align-self:end;margin-top:20px}
+.project-card:hover .project-open span{display:inline-block;animation:arrow-hop .45s ease both}
+.project-dialog[open]{animation:dialog-enter .25s ease-out both}
+@keyframes reel-turn{to{transform:rotate(360deg)}}
+@keyframes film-shift{to{transform:translateX(-8px)}}
+@keyframes trail-draw{to{stroke-dashoffset:-25}}
+@keyframes spark-bob{50%{transform:scale(1.12) rotate(7deg)}}
+@keyframes ink-blink{50%{opacity:.4}}
+@keyframes ink-appear{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes reel-appear{from{opacity:0;transform:translateY(14px) rotate(-4deg)}to{opacity:1;transform:rotate(-4deg)}}
+@keyframes arrow-hop{50%{transform:translate(3px,-3px)}}
+@keyframes dialog-enter{from{opacity:.7;transform:translateX(15px)}to{opacity:1;transform:translateX(0)}}
+@media(max-width:1050px){.hero{grid-template-columns:minmax(0,1fr) minmax(270px,350px)}.hero h1{font-size:clamp(3.5rem,5.4vw,6rem)}}
+@media(max-width:950px){.hero{display:flex;flex-direction:column;align-items:stretch;min-height:0;padding-top:68px}.hero h1{max-width:900px;font-size:clamp(3.6rem,7vw,6rem)}.hero-motion{align-self:center;justify-self:auto;width:min(62%,330px);margin:30px auto 0}.hero-footer{margin-top:15px}}
+@media(max-width:700px){.hero{padding-top:50px}.hero h1{font-size:clamp(3.1rem,10vw,5.2rem)}.hero-motion{width:min(75%,300px);margin-top:20px}.hero-footer{margin-top:10px}}
+@media(max-width:420px){.hero h1{font-size:clamp(2.85rem,10.2vw,4rem)}.hero-motion{width:min(80%,280px)}}
+@media(prefers-reduced-motion:reduce){.hero-main,.hero-motion,.reel-rotor,.film-strip-motion,.motion-trail,.motion-spark,.pulse,.project-card:hover .project-open span,.project-dialog[open]{animation:none!important}}
