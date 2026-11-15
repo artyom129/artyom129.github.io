@@ -1,6 +1,6 @@
-# Asset provenance
+# Assets
 
-- `assets/artyom-portrait.png`: monochrome AI-generated portrait supplied by the site owner for use as the hero illustration.
-- `favicon.svg`: original monochrome icon created for this portfolio.
-- Project cards contain no placeholder images or fabricated screenshots.
-- `assets/backplane-overview.svg`: older repository architecture illustration, retained but not displayed. Its source and license are documented in `assets/BACKPLANE-LICENSE.txt`.
+- `assets/work/*.webp`: screenshots of the running apps, resized from `docs/screenshots` in each project repository.
+- `favicon.svg`: the initials KA, drawn for this site.
+
+No generated images are used.

@@ -1,15 +1,22 @@
-# Artyom Koncha — Developer Portfolio
+# artyom129.github.io
 
-Static portfolio for [artyom129.github.io](https://artyom129.github.io/).
+Portfolio of Koncha Artyom, Python backend and automation developer: [artyom129.github.io](https://artyom129.github.io/).
 
-The site presents six independent engineering projects with descriptions based on their repository READMEs. Project cards open accessible, deep-linkable details using `?project=<slug>`. Every visible site section and project story is available in ten languages: English, Russian, Spanish, French, German, Portuguese, Italian, Chinese, Japanese and Arabic. The selected language is saved locally; Arabic uses a right-to-left layout.
+One static page in English, Russian and Kazakh. It shows SlotBridge, the booking platform that runs in production, and seven projects with real screenshots and the test count of their last run. The console in the hero replays scenarios from the projects' demo data.
 
-The design deliberately uses no placeholder images or fabricated product screenshots. Project details link to the actual source repositories.
+## Files
 
-## Local preview
+| File | What it is |
+| --- | --- |
+| `index.html` | The page, English text inline |
+| `style.css` | Ink palette, IBM Plex Sans and Mono, dark and light themes |
+| `script.js` | Russian and Kazakh strings, language switch, the moving log |
+| `assets/work/*.webp` | Screenshots taken from each project's `docs/screenshots` |
 
-Open `index.html` in a browser or serve the repository root with a static file server. No build step or dependencies are required. The optional Google Fonts request has local font fallbacks.
+## Run locally
 
-## Deployment
+```bash
+python -m http.server 8000
+```
 
-GitHub Pages serves the site from the `main` branch and repository root. Changes to this branch become live after they are merged into `main`.
+GitHub Pages serves `main` from the repository root. No build step.
