@@ -181,7 +181,7 @@
       moon = null;
       if (theme.moon) {
         const R = Math.round(clamp(Math.min(W, A) * 0.085, 9, 22));
-        moon = { x: Math.round(W * (mobile ? 0.84 : 0.8)), y: Math.round(mobile ? 96 / S + R + 2 : A * 0.24), r: R };
+        moon = { x: Math.round(W * (mobile ? 0.84 : 0.8)), y: Math.round(mobile ? 64 / S + R : A * 0.24), r: R };
         drawMoon(sg, moon.x, moon.y, R);
       }
       if (theme.sun) {
