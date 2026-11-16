@@ -4,195 +4,271 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Koncha Artyom">
-  <meta name="description" content="Koncha Artyom builds Python backends and business automation: a booking platform in production, lead pipelines, data intake, log monitoring and AI tools for teachers.">
+  <meta name="description" content="Koncha Artyom builds Python backends and business automation: booking, lead handling, integrations and data pipelines that keep working at night. One booking platform runs in production.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Koncha Artyom · Python backend and automation">
-  <meta property="og:description" content="A booking platform in production and seven working projects with tests and screenshots.">
+  <meta property="og:description" content="Booking, lead handling, integrations and data automation. One app in production, 498 passing tests across eight open projects.">
   <meta property="og:url" content="https://artyom129.github.io/">
   <meta property="og:image" content="https://artyom129.github.io/assets/work/relaydesk.webp">
-  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#080a14">
   <link rel="canonical" href="https://artyom129.github.io/">
-  <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg?v=4" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="style.css?v=6">
-  <script src="script.js?v=4" defer></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Handjet:ELGR,ELSH,wght@1..2,0..16,100..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css?v=21">
+  <script src="script.js?v=21" defer></script>
+  <script src="scene.js?v=21" defer></script>
   <title>Koncha Artyom · Python backend and automation</title>
 </head>
 <body>
-  <a class="skip" href="#work" data-i18n="skip">Skip to the work</a>
+  <a class="skip" href="#services" data-i18n="skip">Skip to the work</a>
 
-  <header class="top">
+  <header class="top" id="top">
     <div class="shell top-inner">
-      <a class="name" href="#">Koncha Artyom</a>
+      <a class="name" href="#"><i class="win"></i>Koncha Artyom</a>
       <nav class="nav" aria-label="Sections">
+        <a href="#services" data-i18n="navServices">Services</a>
         <a href="#work" data-i18n="navWork">Work</a>
         <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
-      <div class="lang" role="group" aria-label="Language">
-        <button type="button" data-lang="en">EN</button>
-        <button type="button" data-lang="ru">RU</button>
-        <button type="button" data-lang="kk">KK</button>
-      </div>
+      <label class="lang">
+        <span class="sr" data-i18n="language">Language</span>
+        <select id="lang">
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+          <option value="kk">Қазақша</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="pt">Português</option>
+          <option value="it">Italiano</option>
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+          <option value="ar">العربية</option>
+        </select>
+      </label>
+      <a class="btn accent small" href="#contact" data-i18n="ctaTalk">Discuss a project</a>
     </div>
   </header>
 
   <main>
-    <section class="hero shell">
-      <div class="hero-text">
-        <p class="status"><i></i><span data-i18n="status">Open to backend and automation work</span></p>
-        <h1 data-i18n="heroTitle">Python backends and automation for businesses that run on bookings, leads and data</h1>
-        <p class="lead" data-i18n="heroLead">I build the part nobody sees until it breaks: the retry, the replay, the check that refuses a second booking for the same minute. One project takes real bookings in production; the rest run with tests and screenshots, all open on GitHub.</p>
+    <section class="hero">
+      <div class="sky" dir="ltr" aria-hidden="true">
+        <canvas id="city"></canvas>
+        <p class="tag" data-kind="ok"><b>slotbridge</b><span dir="auto" data-i18n="tag1">14:00 slot · 1 booked, 9 refused</span></p>
+        <p class="tag" data-kind="ok"><b>relaydesk</b><span dir="auto" data-i18n="tag2">email failed · resumed from step 5</span></p>
+        <p class="tag" data-kind="warn"><b>leadsignal</b><span dir="auto" data-i18n="tag3">new lead · score 82 · reply in 15 min</span></p>
+        <p class="tag" data-kind="ok"><b>logpulse</b><span dir="auto" data-i18n="tag4">114 error lines → 6 incidents</span></p>
+        <p class="tag" data-kind="warn"><b>datadrop</b><span dir="auto" data-i18n="tag5">empty export · held in quarantine</span></p>
+        <p class="tag" data-kind="warn"><b>invoice</b><span dir="auto" data-i18n="tag6">totals don't add up · sent to a person</span></p>
+      </div>
+
+      <div class="shell hero-inner">
+        <p class="status"><i class="win"></i><span data-i18n="status">Open to backend and automation work</span></p>
+        <h1 data-i18n="heroTitle">Backends that don't sleep</h1>
+        <p class="lead" data-i18n="heroLead">I build Python systems for bookings, leads, integrations and data. At 3 a.m. they retry the failed request, resume from the broken step and refuse a double booking on their own. One of them already takes real bookings in production.</p>
         <div class="actions">
-          <a class="btn primary" href="#work" data-i18n="ctaWork">See the work</a>
-          <a class="btn" href="https://github.com/artyom129" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn accent" href="#contact" data-i18n="ctaTalk">Discuss a project</a>
+          <a class="btn ghost" href="#work" data-i18n="ctaWork">See the work</a>
         </div>
       </div>
 
-      <figure class="console" aria-label="Events from the demo data of my projects">
-        <div class="console-bar"><span></span><span></span><span></span><b>tail -f ~/projects/*.log</b></div>
-        <ol class="log" id="log">
-          <li class="ok"><time>14:00:02</time><span class="src">slotbridge</span><span class="msg">10 requests for one slot · 1 booked, 9 refused</span><span class="tag">ok</span></li>
-          <li class="bad"><time>14:00:09</time><span class="src">relaydesk</span><span class="msg">welcome_email timeout · attempt 3/3 → dead letter</span><span class="tag">fail</span></li>
-          <li class="ok"><time>14:01:40</time><span class="src">relaydesk</span><span class="msg">replay from step 5 · CRM and sheet not touched</span><span class="tag">ok</span></li>
-          <li class="ok"><time>14:02:11</time><span class="src">logpulse</span><span class="msg">114 error lines folded into 6 incidents</span><span class="tag">ok</span></li>
-          <li class="warn"><time>14:02:57</time><span class="src">datadrop</span><span class="msg">orders_export.csv · header, no rows → quarantine</span><span class="tag">hold</span></li>
-          <li class="warn"><time>14:03:20</time><span class="src">invoice</span><span class="msg">subtotal + tax ≠ total · sent to a person</span><span class="tag">review</span></li>
-        </ol>
-        <figcaption data-i18n="logCaption">Scenarios from the demo data of the projects below</figcaption>
-      </figure>
+      <div class="shell facts-bar" id="facts">
+        <a class="fact" href="https://github.com/artyom129/SlotBridge/releases/latest" target="_blank" rel="noopener"><b>SlotBridge</b><span data-i18n="statProd">in production · Android app</span></a>
+        <div class="fact"><b>498</b><span data-i18n="statTests">tests passing</span></div>
+        <div class="fact"><b>8</b><span data-i18n="statProjects">open projects</span></div>
+      </div>
     </section>
 
-    <section class="shell" id="work" aria-labelledby="work-title">
-      <div class="section-head">
-        <h2 id="work-title" data-i18n="workTitle">Work</h2>
-        <p data-i18n="workNote">Test counts are from the last run of each project</p>
+    <section class="shell block" id="services" aria-labelledby="svc-title">
+      <div class="head" data-reveal>
+        <h2 id="svc-title" data-i18n="svcTitle">What I can build for you</h2>
+        <p data-i18n="svcNote">Each one is already working in a project below</p>
       </div>
+      <ol class="offers">
+        <li data-reveal>
+          <span class="num"><i class="win"></i>01</span>
+          <h3 data-i18n="s1t">Booking and scheduling</h3>
+          <p data-i18n="s1d">Real free slots, services and specialists, no double bookings even when ten people press at once</p>
+          <span class="proof"><a href="https://github.com/artyom129/SlotBridge" target="_blank" rel="noopener">SlotBridge</a></span>
+        </li>
+        <li data-reveal>
+          <span class="num"><i class="win"></i>02</span>
+          <h3 data-i18n="s2t">Integrations and webhooks</h3>
+          <p data-i18n="s2d">Forms, CRM, sheets, email and chat wired together, with retries and replay from the failed step</p>
+          <span class="proof"><a href="https://github.com/artyom129/RelayDesk-AI-Business-Automation-AI-Integration-Platform" target="_blank" rel="noopener">RelayDesk</a><a href="https://github.com/artyom129/api-webhook-reliability-monitor" target="_blank" rel="noopener">Webhook monitor</a></span>
+        </li>
+        <li data-reveal>
+          <span class="num"><i class="win"></i>03</span>
+          <h3 data-i18n="s3t">Lead handling</h3>
+          <p data-i18n="s3d">Incoming requests scored, routed to the right person and answered before the deadline</p>
+          <span class="proof"><a href="https://github.com/artyom129/leadsignal-hq" target="_blank" rel="noopener">LeadSignal HQ</a></span>
+        </li>
+        <li data-reveal>
+          <span class="num"><i class="win"></i>04</span>
+          <h3 data-i18n="s4t">Data and document automation</h3>
+          <p data-i18n="s4d">CSV and JSON intake with checks, invoice data pulled from PDF, logs folded into incidents</p>
+          <span class="proof"><a href="https://github.com/artyom129/DataDrop-Guardian" target="_blank" rel="noopener">DataDrop</a><a href="https://github.com/artyom129/invoice-document-automation-dashboard" target="_blank" rel="noopener">Invoice</a><a href="https://github.com/artyom129/logpulse-sentinel" target="_blank" rel="noopener">LogPulse</a></span>
+        </li>
+      </ol>
+    </section>
 
-      <article class="featured">
-        <div class="featured-text">
-          <p class="live"><i></i><span data-i18n="sbLive">In production</span></p>
-          <h3>SlotBridge</h3>
-          <p data-i18n="sbText">Booking for salons, clinics and studios. A client picks a service, a specialist and a real free slot, books a visit of several services in one sentence to the AI assistant and leaves a review afterwards.</p>
-          <dl class="facts">
-            <div><dt data-i18n="fStack">Stack</dt><dd>Flutter → FastAPI → PostgreSQL</dd></div>
-            <div><dt data-i18n="fRelease">Release</dt><dd>Android 1.1.6 · Render · Supabase</dd></div>
-            <div><dt data-i18n="fTests">Tests</dt><dd><span class="pass">✓ 121 passed</span> · <span data-i18n="sbCi">CI on real PostgreSQL</span></dd></div>
-          </dl>
-          <div class="links">
-            <a class="btn primary" href="https://github.com/artyom129/SlotBridge/releases/latest" target="_blank" rel="noopener" data-i18n="sbApk">Android app</a>
-            <a class="btn" href="https://github.com/artyom129/SlotBridge" target="_blank" rel="noopener" data-i18n="code">Code</a>
-          </div>
+    <div class="light">
+      <section class="shell block" id="work" aria-labelledby="work-title">
+        <div class="head" data-reveal>
+          <h2 id="work-title" data-i18n="workTitle">Work</h2>
+          <p data-i18n="workNote">Test counts are from the last run of each project</p>
         </div>
 
-        <figure class="day" aria-label="One day in the schedule: the 14:00 slot is booked once, nine competing requests are refused">
-          <div class="day-head"><span data-i18n="dayTitle">Friday · Aida, hair</span><span class="mono">09:00–18:00</span></div>
-          <ol class="slots">
-            <li><time>10:00</time><b class="booked" data-i18n="slot10">Dana P. · haircut</b></li>
-            <li><time>11:00</time><b class="free" data-i18n="free">free</b></li>
-            <li><time>12:00</time><b class="booked" data-i18n="slot12">Leo M. · coloring</b></li>
-            <li><time>13:00</time><b class="free" data-i18n="free">free</b></li>
-            <li class="race"><time>14:00</time><b class="booked" data-i18n="slot14">Maya T. · haircut</b><span class="refused"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><em data-i18n="refused">9 refused</em></span></li>
-            <li><time>15:00</time><b class="free" data-i18n="free">free</b></li>
-            <li><time>16:00</time><b class="booked" data-i18n="slot16">Nora F. · manicure</b></li>
-          </ol>
-          <figcaption data-i18n="dayCaption">PostgreSQL refuses the double booking on its own: ten requests for one slot give exactly one appointment</figcaption>
-        </figure>
-      </article>
+        <article class="featured" data-reveal>
+          <div class="featured-text">
+            <p class="live"><i></i><span data-i18n="sbLive">In production</span></p>
+            <h3>SlotBridge</h3>
+            <p data-i18n="sbText">Booking for salons, clinics and studios. A client picks a service, a specialist and a real free slot, books a visit of several services in one sentence to the AI assistant and leaves a review afterwards.</p>
+            <dl class="facts">
+              <div><dt data-i18n="fStack">Stack</dt><dd>Flutter → FastAPI → PostgreSQL</dd></div>
+              <div><dt data-i18n="fRelease">Release</dt><dd>Android 1.1.6 · Render · Supabase</dd></div>
+              <div><dt data-i18n="fTests">Tests</dt><dd><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>121 passed</span> · <span data-i18n="sbCi">CI on real PostgreSQL</span></dd></div>
+            </dl>
+            <div class="actions">
+              <a class="btn accent" href="https://github.com/artyom129/SlotBridge/releases/latest" target="_blank" rel="noopener" data-i18n="sbApk">Android app</a>
+              <a class="btn ghost" href="https://github.com/artyom129/SlotBridge" target="_blank" rel="noopener" data-i18n="code">Code</a>
+            </div>
+          </div>
 
-      <div class="grid">
-        <a class="card w7" href="https://github.com/artyom129/aivera-reimagined" target="_blank" rel="noopener">
-          <img src="assets/work/aivera.webp" width="1400" height="875" alt="AIvera chat with a lesson plan" loading="lazy">
-          <div class="card-body">
-            <h3>AIvera</h3>
-            <p data-i18n="aiveraText">An assistant for teachers: lesson plans, tests, feedback on student work and letters to parents, exported to Word or PDF.</p>
-            <span class="meta"><span class="pass">✓ 67 passed</span> · Next.js · Supabase · Gemini</span>
-          </div>
-        </a>
-        <a class="card w5" href="https://github.com/artyom129/RelayDesk-AI-Business-Automation-AI-Integration-Platform" target="_blank" rel="noopener">
-          <img src="assets/work/relaydesk-run.webp" width="1430" height="943" alt="RelayDesk run stopped at the welcome email, ready to replay" loading="lazy">
-          <div class="card-body">
-            <h3>RelayDesk</h3>
-            <p data-i18n="relayText">A lead from a webhook goes through AI scoring, CRM, a sheet, email and a team alert. A failed step is retried, then waits to be replayed from where it stopped.</p>
-            <span class="meta"><span class="pass">✓ 27 passed</span> · FastAPI · SQLAlchemy</span>
-          </div>
-        </a>
-        <a class="card w5" href="https://github.com/artyom129/leadsignal-hq" target="_blank" rel="noopener">
-          <img src="assets/work/leadsignal.webp" width="1400" height="875" alt="LeadSignal dispatch board" loading="lazy">
-          <div class="card-body">
-            <h3>LeadSignal HQ</h3>
-            <p data-i18n="leadText">Scores incoming leads, hands each one to the right owner and shows who has to be answered next, before a reply deadline is missed.</p>
-            <span class="meta"><span class="pass">✓ 63 passed</span> · FastAPI · SQLite</span>
-          </div>
-        </a>
-        <a class="card w7" href="https://github.com/artyom129/logpulse-sentinel" target="_blank" rel="noopener">
-          <img src="assets/work/logpulse.webp" width="1400" height="875" alt="LogPulse overview: 114 error lines folded into 6 incidents" loading="lazy">
-          <div class="card-body">
-            <h3>LogPulse Sentinel</h3>
-            <p data-i18n="logText">Reads your app's log files and folds the noise into incidents: 114 error lines on the demo day become 6. Alerts go to Telegram.</p>
-            <span class="meta"><span class="pass">✓ 34 passed</span> · FastAPI · SQLite · Telegram</span>
-          </div>
-        </a>
-        <a class="card w4" href="https://github.com/artyom129/DataDrop-Guardian" target="_blank" rel="noopener">
-          <img src="assets/work/datadrop.webp" width="1400" height="875" alt="DataDrop intake page" loading="lazy">
-          <div class="card-body">
-            <h3>DataDrop Guardian</h3>
-            <p data-i18n="dropText">Watches a folder of CSV and JSON exports, checks every row and holds back broken, empty or duplicate files with the exact reason.</p>
-            <span class="meta"><span class="pass">✓ 32 passed</span> · FastAPI · SQLite</span>
-          </div>
-        </a>
-        <a class="card w4" href="https://github.com/artyom129/invoice-document-automation-dashboard" target="_blank" rel="noopener">
-          <img src="assets/work/invoice.webp" width="1280" height="593" alt="Invoice review: extracted fields next to the original PDF" loading="lazy">
-          <div class="card-body">
-            <h3 data-i18n="invoiceTitle">Invoice automation</h3>
-            <p data-i18n="invoiceText">Pulls supplier, number, dates and totals out of PDF invoices, rates its own confidence and sends unsure ones to a person.</p>
-            <span class="meta"><span class="pass">✓ 110 passed</span> · FastAPI · PyMuPDF</span>
-          </div>
-        </a>
-        <a class="card w4" href="https://github.com/artyom129/api-webhook-reliability-monitor" target="_blank" rel="noopener">
-          <img src="assets/work/webhook.webp" width="1280" height="559" alt="Webhook event with delivery status and a replay button" loading="lazy">
-          <div class="card-body">
-            <h3 data-i18n="hookTitle">Webhook monitor</h3>
-            <p data-i18n="hookText">Receives webhooks, forwards them with retries and shows each delivery attempt, so a lost event can be found and sent again.</p>
-            <span class="meta"><span class="pass">✓ 44 passed</span> · FastAPI · SQLite</span>
-          </div>
-        </a>
-        <a class="more" href="https://github.com/artyom129?tab=repositories" target="_blank" rel="noopener">
-          <span data-i18n="moreText">Scrapers, CSV and Excel cleanup, API sync tools and older experiments</span>
-          <span class="mono">github.com/artyom129 →</span>
-        </a>
-      </div>
-    </section>
+          <figure class="day" aria-label="One day in the schedule: the 14:00 slot is booked once, nine competing requests are refused">
+            <div class="day-head"><span data-i18n="dayTitle">Friday · Aida, hair</span><span class="mono">09:00–18:00</span></div>
+            <ol class="slots">
+              <li><time>10:00</time><b class="booked" data-i18n="slot10">Dana P. · haircut</b></li>
+              <li><time>11:00</time><b class="free" data-i18n="free">free</b></li>
+              <li><time>12:00</time><b class="booked" data-i18n="slot12">Leo M. · coloring</b></li>
+              <li><time>13:00</time><b class="free" data-i18n="free">free</b></li>
+              <li class="race"><time>14:00</time><b class="booked" data-i18n="slot14">Maya T. · haircut</b><span class="refused"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><em data-i18n="refused">9 refused</em></span></li>
+              <li><time>15:00</time><b class="free" data-i18n="free">free</b></li>
+              <li><time>16:00</time><b class="booked" data-i18n="slot16">Nora F. · manicure</b></li>
+            </ol>
+            <figcaption data-i18n="dayCaption">PostgreSQL refuses the double booking on its own: ten requests for one slot give exactly one appointment</figcaption>
+          </figure>
+        </article>
 
-    <section class="shell split" id="about" aria-labelledby="about-title">
-      <h2 id="about-title" data-i18n="aboutTitle">About</h2>
-      <div>
-        <p class="big" data-i18n="about1">I'm a Python backend developer. Most of my work sits between systems: a form and a CRM, a folder of exports and a database, a mobile app and the server that owns the rules.</p>
-        <p data-i18n="about2">I care about what happens when something breaks. A provider times out, a file arrives half-copied, two clients press "book" in the same second. That part decides whether a business can rely on the software, so that is where I spend the effort.</p>
-        <ul class="stack">
-          <li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>PostgreSQL</li><li>Alembic</li><li>pytest</li><li>Flutter</li><li>Next.js</li><li>Docker</li><li>GitHub Actions</li><li>Telegram bots</li><li>Gemini API</li>
+        <div class="grid">
+          <a class="card w7" data-reveal href="https://github.com/artyom129/aivera-reimagined" target="_blank" rel="noopener">
+            <img src="assets/work/aivera.webp" width="1400" height="875" alt="AIvera chat with a lesson plan" loading="lazy">
+            <div class="card-body">
+              <h3>AIvera</h3>
+              <p data-i18n="aiveraText">An assistant for teachers: lesson plans, tests, feedback on student work and letters to parents, exported to Word or PDF.</p>
+              <span class="meta"><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>67 passed</span> · Next.js · Supabase · Gemini</span>
+            </div>
+          </a>
+          <a class="card w5" data-reveal href="https://github.com/artyom129/RelayDesk-AI-Business-Automation-AI-Integration-Platform" target="_blank" rel="noopener">
+            <img src="assets/work/relaydesk-run.webp" width="1430" height="943" alt="RelayDesk run stopped at the welcome email, ready to replay" loading="lazy">
+            <div class="card-body">
+              <h3>RelayDesk</h3>
+              <p data-i18n="relayText">A lead from a webhook goes through AI scoring, CRM, a sheet, email and a team alert. A failed step is retried, then waits to be replayed from where it stopped.</p>
+              <span class="meta"><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>27 passed</span> · FastAPI · SQLAlchemy</span>
+            </div>
+          </a>
+          <a class="card w5" data-reveal href="https://github.com/artyom129/leadsignal-hq" target="_blank" rel="noopener">
+            <img src="assets/work/leadsignal.webp" width="1400" height="875" alt="LeadSignal dispatch board" loading="lazy">
+            <div class="card-body">
+              <h3>LeadSignal HQ</h3>
+              <p data-i18n="leadText">Scores incoming leads, hands each one to the right owner and shows who has to be answered next, before a reply deadline is missed.</p>
+              <span class="meta"><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>63 passed</span> · FastAPI · SQLite</span>
+            </div>
+          </a>
+          <a class="card w7" data-reveal href="https://github.com/artyom129/logpulse-sentinel" target="_blank" rel="noopener">
+            <img src="assets/work/logpulse.webp" width="1400" height="875" alt="LogPulse overview: 114 error lines folded into 6 incidents" loading="lazy">
+            <div class="card-body">
+              <h3>LogPulse Sentinel</h3>
+              <p data-i18n="logText">Reads your app's log files and folds the noise into incidents: 114 error lines on the demo day become 6. Alerts go to Telegram.</p>
+              <span class="meta"><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>34 passed</span> · FastAPI · SQLite · Telegram</span>
+            </div>
+          </a>
+          <a class="card w4" data-reveal href="https://github.com/artyom129/DataDrop-Guardian" target="_blank" rel="noopener">
+            <img src="assets/work/datadrop.webp" width="1400" height="875" alt="DataDrop intake page" loading="lazy">
+            <div class="card-body">
+              <h3>DataDrop Guardian</h3>
+              <p data-i18n="dropText">Watches a folder of CSV and JSON exports, checks every row and holds back broken, empty or duplicate files with the exact reason.</p>
+              <span class="meta"><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>32 passed</span> · FastAPI · SQLite</span>
+            </div>
+          </a>
+          <a class="card w4" data-reveal href="https://github.com/artyom129/invoice-document-automation-dashboard" target="_blank" rel="noopener">
+            <img src="assets/work/invoice.webp" width="1280" height="593" alt="Invoice review: extracted fields next to the original PDF" loading="lazy">
+            <div class="card-body">
+              <h3 data-i18n="invoiceTitle">Invoice automation</h3>
+              <p data-i18n="invoiceText">Pulls supplier, number, dates and totals out of PDF invoices, rates its own confidence and sends unsure ones to a person.</p>
+              <span class="meta"><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>110 passed</span> · FastAPI · PyMuPDF</span>
+            </div>
+          </a>
+          <a class="card w4" data-reveal href="https://github.com/artyom129/api-webhook-reliability-monitor" target="_blank" rel="noopener">
+            <img src="assets/work/webhook.webp" width="1280" height="559" alt="Webhook event with delivery status and a replay button" loading="lazy">
+            <div class="card-body">
+              <h3 data-i18n="hookTitle">Webhook monitor</h3>
+              <p data-i18n="hookText">Receives webhooks, forwards them with retries and shows each delivery attempt, so a lost event can be found and sent again.</p>
+              <span class="meta"><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>44 passed</span> · FastAPI · SQLite</span>
+            </div>
+          </a>
+          <a class="more" href="https://github.com/artyom129?tab=repositories" target="_blank" rel="noopener">
+            <span data-i18n="moreText">Scrapers, CSV and Excel cleanup, API sync tools and older experiments</span>
+            <span class="mono">github.com/artyom129 →</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="shell block" aria-labelledby="get-title">
+        <div class="head" data-reveal>
+          <h2 id="get-title" data-i18n="getTitle">What comes with the code</h2>
+        </div>
+        <ul class="gets">
+          <li data-reveal>
+            <span class="wins" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span>
+            <h3 data-i18n="g1t">Tests for every scenario</h3>
+            <p data-i18n="g1d">498 tests across the projects on this page, all open on GitHub</p>
+          </li>
+          <li data-reveal>
+            <span class="wins" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span>
+            <h3 data-i18n="g2t">Failures planned in advance</h3>
+            <p data-i18n="g2d">Retries, replay from the failed step and protection from duplicates are designed before launch, not after the first incident</p>
+          </li>
+          <li data-reveal>
+            <span class="wins" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+            <h3 data-i18n="g3t">Docs you can hand over</h3>
+            <p data-i18n="g3d">A README with an architecture diagram, screenshots and run commands in every repository</p>
+          </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section class="shell split" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title" data-i18n="contactTitle">Contact</h2>
-      <div>
-        <p class="big" data-i18n="contactText">Need a backend, an integration or an automation that keeps working when something breaks? Write to me.</p>
+      <section class="shell block split" id="about" aria-labelledby="about-title">
+        <h2 id="about-title" data-i18n="aboutTitle" data-reveal>About</h2>
+        <div data-reveal>
+          <p class="big" data-i18n="about1">I'm a Python backend developer. Most of my work sits between systems: a form and a CRM, a folder of exports and a database, a mobile app and the server that owns the rules.</p>
+          <p data-i18n="about2">I care about what happens when something breaks. A provider times out, a file arrives half-copied, two clients press "book" in the same second. That part decides whether a business can rely on the software, so that is where I spend the effort.</p>
+          <ul class="stack">
+            <li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>PostgreSQL</li><li>Alembic</li><li>pytest</li><li>Flutter</li><li>Next.js</li><li>Docker</li><li>GitHub Actions</li><li>Telegram bots</li><li>Gemini API</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <canvas id="dawn" aria-hidden="true"></canvas>
+      <div class="shell contact-inner" data-reveal>
+        <h2 id="contact-title" data-i18n="contactBig">Tell me about your task</h2>
+        <p data-i18n="contactText">Need a backend, an integration or an automation that keeps working when something breaks? Write to me.</p>
         <div class="actions">
-          <a class="btn primary" href="https://www.linkedin.com/in/artyom-python-automation/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/artyom129" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn accent" href="https://www.linkedin.com/in/artyom-python-automation/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/artyom129" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="shell foot">
-    <span>© 2026 Koncha Artyom</span>
-    <a href="#" data-i18n="top">Back to top</a>
+  <footer class="foot">
+    <div class="shell foot-row">
+      <span>© 2026 Koncha Artyom</span>
+      <a href="#" data-i18n="top">Back to top</a>
+    </div>
   </footer>
 </body>
 </html>
