@@ -1,6 +1,7 @@
 // English lives in the HTML. Every other language replaces it by data-i18n key.
 const T = {
   ru: {
+    contactPrice: "Стоимость считаю под задачу: опишите её, и я пришлю оценку цены и сроков",
     navServices: "Услуги",
     heroTitle: "Бизнес работает, пока вы спите",
     heroLead: "Делаю на Python онлайн-запись, обработку заявок и интеграции для бизнеса. Клиенты записываются сами, каждая заявка доходит до нужного человека, а сервисы обмениваются данными, даже если один из них упал. Моё приложение для записи SlotBridge уже принимает записи от реальных клиентов.",
@@ -66,6 +67,7 @@ const T = {
     language: "Язык"
   },
   kk: {
+    contactPrice: "Бағаны тапсырмаға қарай есептеймін: оны сипаттаңыз, мен баға мен мерзімді бағалап жіберемін",
     navServices: "Қызметтер",
     heroTitle: "Сіз ұйықтағанда бизнесіңіз жұмыс істейді",
     heroLead: "Бизнеске арналған онлайн жазылу, өтінімдерді өңдеу және интеграцияларды Python-да жасаймын. Клиенттер өздері жазылады, әр өтінім тиісті адамға жетеді, ал сервистер біреуі істен шықса да деректермен алмаса береді. Менің SlotBridge жазылу қосымшам нақты клиенттерден жазылуларды қабылдап жатыр.",
@@ -131,6 +133,7 @@ const T = {
     language: "Тіл"
   },
   es: {
+    contactPrice: "El precio depende de la tarea: descríbela y te enviaré una estimación de coste y plazos",
     navServices: "Servicios",
     heroTitle: "Tu negocio funciona mientras duermes",
     heroLead: "Construyo en Python reservas online, gestión de leads e integraciones para negocios. Los clientes reservan solos, cada solicitud llega a la persona adecuada y tus servicios siguen intercambiando datos aunque uno de ellos falle. Mi app de reservas SlotBridge ya recibe reservas de clientes reales.",
@@ -196,6 +199,7 @@ const T = {
     top: "Volver arriba"
   },
   fr: {
+    contactPrice: "Le prix dépend de la tâche : décrivez-la et je vous envoie une estimation du coût et des délais",
     navServices: "Services",
     heroTitle: "Votre activité tourne pendant que vous dormez",
     heroLead: "Je construis en Python la réservation en ligne, le traitement des demandes et les intégrations pour les entreprises. Les clients réservent seuls, chaque demande arrive à la bonne personne et vos services continuent d'échanger leurs données même si l'un d'eux tombe. Mon app de réservation SlotBridge prend déjà des réservations de vrais clients.",
@@ -261,6 +265,7 @@ const T = {
     top: "Haut de page"
   },
   de: {
+    contactPrice: "Der Preis hängt von der Aufgabe ab: Beschreiben Sie sie, und ich schicke eine Schätzung zu Kosten und Zeitrahmen",
     navServices: "Leistungen",
     heroTitle: "Ihr Geschäft läuft, während Sie schlafen",
     heroLead: "Ich baue in Python Online-Buchung, Lead-Bearbeitung und Integrationen für Unternehmen. Kunden buchen selbst, jede Anfrage landet bei der richtigen Person, und Ihre Dienste tauschen weiter Daten aus, auch wenn einer ausfällt. Meine Buchungs-App SlotBridge nimmt bereits Buchungen echter Kunden an.",
@@ -326,6 +331,7 @@ const T = {
     top: "Nach oben"
   },
   pt: {
+    contactPrice: "O preço depende da tarefa: descreva-a e eu envio uma estimativa de custo e prazo",
     navServices: "Serviços",
     heroTitle: "Seu negócio funciona enquanto você dorme",
     heroLead: "Construo em Python agendamento online, gestão de leads e integrações para empresas. Os clientes agendam sozinhos, cada pedido chega à pessoa certa e seus serviços continuam trocando dados mesmo quando um deles cai. Meu app de agendamento SlotBridge já recebe agendamentos de clientes reais.",
@@ -391,6 +397,7 @@ const T = {
     top: "Voltar ao topo"
   },
   it: {
+    contactPrice: "Il prezzo dipende dal lavoro: descrivilo e ti mando una stima di costi e tempi",
     navServices: "Servizi",
     heroTitle: "La tua attività lavora mentre dormi",
     heroLead: "Costruisco in Python prenotazioni online, gestione dei lead e integrazioni per le aziende. I clienti prenotano da soli, ogni richiesta arriva alla persona giusta e i tuoi servizi continuano a scambiarsi dati anche quando uno si ferma. La mia app di prenotazione SlotBridge riceve già prenotazioni da clienti reali.",
@@ -456,6 +463,7 @@ const T = {
     top: "Torna su"
   },
   zh: {
+    contactPrice: "价格按任务计算：描述你的需求，我会发来费用和工期的估算",
     navServices: "服务",
     heroTitle: "你睡觉时，业务照常运转",
     heroLead: "我用 Python 为企业构建在线预约、线索处理和系统集成。客户自助预约，每条请求都会送到对的人手上，即使某个服务宕机，各系统之间的数据交换也不会中断。我的预约应用 SlotBridge 已经在接收真实客户的预约。",
@@ -521,6 +529,7 @@ const T = {
     top: "回到顶部"
   },
   ja: {
+    contactPrice: "料金は内容に応じて見積もります。ご依頼内容を送っていただければ、費用と期間の見積もりをお送りします",
     navServices: "サービス",
     heroTitle: "眠っている間も、ビジネスは動き続ける",
     heroLead: "Python でビジネス向けのオンライン予約、問い合わせ対応、システム連携を作っています。お客様は自分で予約し、すべての問い合わせが適切な担当者に届き、どれかのサービスが落ちてもデータのやり取りは止まりません。予約アプリ SlotBridge はすでに実際のお客様の予約を受け付けています。",
@@ -586,6 +595,7 @@ const T = {
     top: "ページの先頭へ"
   },
   ar: {
+    contactPrice: "يُحسب السعر حسب المهمة: صِفها وسأرسل لك تقديرًا للتكلفة والمدة",
     navServices: "الخدمات",
     heroTitle: "عملك يستمر بينما تنام",
     heroLead: "أبني بلغة Python أنظمة الحجز عبر الإنترنت ومعالجة الطلبات والتكاملات للشركات. يحجز العملاء بأنفسهم، ويصل كل طلب إلى الشخص المناسب، وتواصل خدماتك تبادل البيانات حتى لو تعطل أحدها. تطبيق الحجز SlotBridge الخاص بي يستقبل بالفعل حجوزات من عملاء حقيقيين.",
