@@ -2,7 +2,7 @@
 
 Portfolio of Koncha Artyom, Python backend and automation developer: [artyom129.github.io](https://artyom129.github.io/).
 
-One static page in eleven languages: English, Russian, Kazakh, Spanish, French, German, Portuguese, Italian, Chinese, Japanese and Arabic (right to left). It shows SlotBridge, the booking platform that runs in production, and seven projects with real screenshots and the test count of their last run. The first screen is a pixel city at night, drawn in code: lit windows carry notes with real scenarios from the projects' demo data. The page ends with the same city at sunrise.
+One static page in eleven languages: English, Russian, Kazakh, Spanish, French, German, Portuguese, Italian, Chinese, Japanese and Arabic (right to left). It shows SlotBridge, the booking platform that runs in production, nine projects with real screenshots and the test count of their last run, and four platform building blocks. It also has a four-step description of how a project goes and short answers to the questions clients ask first. The email button opens a message in the visitor's language with three questions ready. The first screen is a pixel city at night, drawn in code: lit windows carry notes with real scenarios from the projects' demo data. The page ends with the same city at sunrise.
 
 ## Files
 

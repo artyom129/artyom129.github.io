@@ -7,18 +7,18 @@
   <meta name="description" content="Koncha Artyom builds Python backends and business automation: booking, lead handling, integrations and data pipelines that keep working at night. One booking platform runs in production.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Koncha Artyom · Python backend and automation">
-  <meta property="og:description" content="Booking, lead handling, integrations and data automation. One app in production, 498 passing tests across eight open projects.">
+  <meta property="og:description" content="Booking, lead handling, integrations and data automation. One app in production, 783 passing tests across fourteen open projects.">
   <meta property="og:url" content="https://artyom129.github.io/">
   <meta property="og:image" content="https://artyom129.github.io/assets/work/relaydesk.webp">
   <meta name="theme-color" content="#080a14">
   <link rel="canonical" href="https://artyom129.github.io/">
-  <link rel="icon" href="favicon.svg?v=25" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg?v=26" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Handjet:ELGR,ELSH,wght@1..2,0..16,100..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="style.css?v=25">
-  <script src="script.js?v=25" defer></script>
-  <script src="scene.js?v=25" defer></script>
+  <link rel="stylesheet" href="style.css?v=26">
+  <script src="script.js?v=26" defer></script>
+  <script src="scene.js?v=26" defer></script>
   <title>Koncha Artyom · Python backend and automation</title>
 </head>
 <body>
@@ -76,8 +76,8 @@
 
       <div class="shell facts-bar" id="facts">
         <a class="fact" href="https://github.com/artyom129/SlotBridge/releases/latest" target="_blank" rel="noopener"><b>SlotBridge</b><span data-i18n="statProd">in production · Android app</span></a>
-        <div class="fact"><b>498</b><span data-i18n="statTests">tests passing</span></div>
-        <div class="fact"><b>8</b><span data-i18n="statProjects">open projects</span></div>
+        <div class="fact"><b>783</b><span data-i18n="statTests">tests passing</span></div>
+        <div class="fact"><b>14</b><span data-i18n="statProjects">open projects</span></div>
       </div>
     </section>
 
@@ -110,6 +110,18 @@
           <h3 data-i18n="s4t">Data and document automation</h3>
           <p data-i18n="s4d">CSV and JSON intake with checks, invoice data pulled from PDF, logs folded into incidents</p>
           <span class="proof"><a href="https://github.com/artyom129/DataDrop-Guardian" target="_blank" rel="noopener">DataDrop</a><a href="https://github.com/artyom129/invoice-document-automation-dashboard" target="_blank" rel="noopener">Invoice</a><a href="https://github.com/artyom129/logpulse-sentinel" target="_blank" rel="noopener">LogPulse</a></span>
+        </li>
+        <li data-reveal>
+          <span class="num"><i class="win"></i>05</span>
+          <h3 data-i18n="s5t">SaaS backends</h3>
+          <p data-i18n="s5d">Accounts, roles, API keys, plans and quotas, with every customer's data kept apart</p>
+          <span class="proof"><a href="https://github.com/artyom129/tenantforge" target="_blank" rel="noopener">TenantForge</a><a href="https://github.com/artyom129/CohortSwitch" target="_blank" rel="noopener">CohortSwitch</a><a href="https://github.com/artyom129/queueforge" target="_blank" rel="noopener">QueueForge</a></span>
+        </li>
+        <li data-reveal>
+          <span class="num"><i class="win"></i>06</span>
+          <h3 data-i18n="s6t">Migration checks</h3>
+          <p data-i18n="s6d">I compare the old system with the new one record by record. You get a verdict, a report and a patch plan, not just a row count</p>
+          <span class="proof"><a href="https://github.com/artyom129/syncproof" target="_blank" rel="noopener">SyncProof</a></span>
         </li>
       </ol>
     </section>
@@ -209,6 +221,31 @@
               <span class="meta"><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>44 passed</span> · FastAPI · SQLite</span>
             </div>
           </a>
+          <a class="card w6" data-reveal href="https://github.com/artyom129/syncproof" target="_blank" rel="noopener">
+            <img src="assets/work/syncproof.webp" width="1400" height="875" alt="SyncProof verdict page: a rejected migration with the differences listed by field" loading="lazy">
+            <div class="card-body">
+              <h3>SyncProof</h3>
+              <p data-i18n="syncText">Compares a migration record by record: changed fields, missing and extra rows, renamed IDs. On a test set of 1,200 customers it found all 65 planted changes.</p>
+              <span class="meta"><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>27 passed</span> · FastAPI · SQLite</span>
+            </div>
+          </a>
+          <a class="card w6" data-reveal href="https://github.com/artyom129/opsweave" target="_blank" rel="noopener">
+            <img src="assets/work/opsweave.webp" width="1400" height="875" alt="OpsWeave workflow graph with the path of the last run drawn in amber" loading="lazy">
+            <div class="card-body">
+              <h3>OpsWeave</h3>
+              <p data-i18n="opsText">A workflow engine: a graph of steps with retries, a history of every step, and failed runs kept for a one-time replay.</p>
+              <span class="meta"><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>17 passed</span> · FastAPI · SQLite</span>
+            </div>
+          </a>
+          <div class="minis" data-reveal>
+            <h3 data-i18n="miniTitle">Platform building blocks</h3>
+            <ul>
+              <li><a href="https://github.com/artyom129/backplane" target="_blank" rel="noopener"><b>Backplane</b><span data-i18n="m1">Control plane for APIs, webhooks and jobs</span><em><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>17 passed</span> · React</em></a></li>
+              <li><a href="https://github.com/artyom129/queueforge" target="_blank" rel="noopener"><b>QueueForge</b><span data-i18n="m2">Background jobs with retries</span><em><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>40 passed</span> · Redis</em></a></li>
+              <li><a href="https://github.com/artyom129/tenantforge" target="_blank" rel="noopener"><b>TenantForge</b><span data-i18n="m3">Multi-tenant SaaS backend</span><em><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>128 passed</span> · PostgreSQL</em></a></li>
+              <li><a href="https://github.com/artyom129/CohortSwitch" target="_blank" rel="noopener"><b>CohortSwitch</b><span data-i18n="m4">Feature flags and gradual rollouts</span><em><span class="pass"><svg class="px" viewBox="0 0 7 5" aria-hidden="true"><path d="M0 2h1v1H0zM1 3h1v1H1zM2 4h1v1H2zM3 3h1v1H3zM4 2h1v1H4zM5 1h1v1H5zM6 0h1v1H6z"/></svg>56 passed</span> · PostgreSQL</em></a></li>
+            </ul>
+          </div>
           <a class="more" href="https://github.com/artyom129?tab=repositories" target="_blank" rel="noopener">
             <span data-i18n="moreText">Scrapers, CSV and Excel cleanup, API sync tools and older experiments</span>
             <span class="mono">github.com/artyom129 →</span>
@@ -224,7 +261,7 @@
           <li data-reveal>
             <span class="wins" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span>
             <h3 data-i18n="g1t">Tests in every project</h3>
-            <p data-i18n="g1d">498 tests across the projects on this page, all open on GitHub</p>
+            <p data-i18n="g1d">783 tests across the projects on this page, all open on GitHub</p>
           </li>
           <li data-reveal>
             <span class="wins" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span>
@@ -237,6 +274,52 @@
             <p data-i18n="g3d">A README with an architecture diagram, screenshots and run commands in every repository</p>
           </li>
         </ul>
+      </section>
+
+      <section class="shell block" id="process" aria-labelledby="process-title">
+        <div class="head" data-reveal>
+          <h2 id="process-title" data-i18n="procTitle">How a project goes</h2>
+        </div>
+        <ol class="steps">
+          <li data-reveal>
+            <span class="num"><i class="win"></i>01</span>
+            <h3 data-i18n="p1t">You describe the task</h3>
+            <p data-i18n="p1d">Three lines are enough: what the system does, what goes wrong, and the deadline</p>
+          </li>
+          <li data-reveal>
+            <span class="num"><i class="win"></i>02</span>
+            <h3 data-i18n="p2t">I send an estimate</h3>
+            <p data-i18n="p2d">A price and a timeline for your task</p>
+          </li>
+          <li data-reveal>
+            <span class="num"><i class="win"></i>03</span>
+            <h3 data-i18n="p3t">I build it with tests</h3>
+            <p data-i18n="p3d">If there is code already, I read it first and cover what I will touch with tests. You see a version you can run</p>
+          </li>
+          <li data-reveal>
+            <span class="num"><i class="win"></i>04</span>
+            <h3 data-i18n="p4t">You get the handover</h3>
+            <p data-i18n="p4d">The code in your repository, a README, and notes on how the system behaves when things fail</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="shell block split" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title" data-i18n="faqTitle" data-reveal>Questions</h2>
+        <div class="faq" data-reveal>
+          <details>
+            <summary data-i18n="q1">How much does it cost?</summary>
+            <p data-i18n="a1">I price each task separately. Describe it and I reply with a price and a timeline.</p>
+          </details>
+          <details>
+            <summary data-i18n="q2">Can you work with code that already exists?</summary>
+            <p data-i18n="a2">Yes. I start by reading it and writing tests around the parts I will change, so a fix does not break what worked.</p>
+          </details>
+          <details>
+            <summary data-i18n="q3">Can I check your work first?</summary>
+            <p data-i18n="a3">Yes. Every project on this page is open on GitHub with a README, screenshots and tests you can run yourself.</p>
+          </details>
+        </div>
       </section>
 
       <section class="shell block split" id="about" aria-labelledby="about-title">
@@ -259,7 +342,7 @@
         <p class="price-note" data-i18n="contactPrice">The price depends on the task: describe it and I will send an estimate of cost and timeline</p>
         <div class="actions">
           <a class="btn accent" href="https://t.me/arttyism" target="_blank" rel="noopener">Telegram @arttyism</a>
-          <a class="btn ghost" href="mailto:artyom129.x@gmail.com">artyom129.x@gmail.com</a>
+          <a class="btn ghost" data-mail href="mailto:artyom129.x@gmail.com?subject=Project%20estimate&amp;body=What%20the%20system%20does%3A%0A%0AWhat%20goes%20wrong%20or%20what%20you%20need%3A%0A%0ADeadline%3A%0A">artyom129.x@gmail.com</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/artyom-python-automation/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn ghost" href="https://github.com/artyom129" target="_blank" rel="noopener">GitHub</a>
         </div>
